@@ -1,0 +1,38 @@
+.root {
+  position: relative;
+  flex: 0 1 300px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.input {
+  padding: 7px 35px;
+  border-radius: 5px;
+  padding-right: 26px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #5d5d5d;
+  transition: box-shadow 0.2s ease 0s;
+  &:focus {
+    // border-color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  }
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.clear {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  cursor: pointer;
+}
